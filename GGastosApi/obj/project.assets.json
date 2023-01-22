@@ -229,11 +229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\b\\Documents\\GitHub\\CSharp\\Projects\\GGastosApi\\GGastosApi\\GGastosApi.csproj",
+      "projectUniqueName": "C:\\Users\\b\\Documents\\GitHub\\GGastosApi\\GGastosApi\\GGastosApi.csproj",
       "projectName": "GGastosApi",
-      "projectPath": "C:\\Users\\b\\Documents\\GitHub\\CSharp\\Projects\\GGastosApi\\GGastosApi\\GGastosApi.csproj",
+      "projectPath": "C:\\Users\\b\\Documents\\GitHub\\GGastosApi\\GGastosApi\\GGastosApi.csproj",
       "packagesPath": "C:\\Users\\b\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\b\\Documents\\GitHub\\CSharp\\Projects\\GGastosApi\\GGastosApi\\obj\\",
+      "outputPath": "C:\\Users\\b\\Documents\\GitHub\\GGastosApi\\GGastosApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\b\\AppData\\Roaming\\NuGet\\NuGet.Config",
