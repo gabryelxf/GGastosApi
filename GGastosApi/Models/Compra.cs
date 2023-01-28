@@ -5,15 +5,10 @@ namespace GGastosApi.Models;
 public class Compra
 {
 
-    private static int id = 0;
 
-    public int IdCompra { get; }
-
-    public Compra()
-    {
-        id++;
-        this.IdCompra = id;
-    }
+    [Key]
+    [Required]
+    public int IdCompra { get; set; }
 
     [Required(ErrorMessage = "Campo Local é obrigatório")]
     [MaxLength(50, ErrorMessage = "Campo Local precisa ter no máximo 50 caracteres")]
@@ -26,11 +21,8 @@ public class Compra
     [Range(0.01, double.MaxValue, ErrorMessage = "Campo valor precisa ser maior que 0")]
     public double Valor { get; set; }
 
-    private DateTime dataInsercao = DateTime.Now;
+    [Required]
+    public DateTime DataInsercao { get; private set; } = DateTime.Now;
 
-    public DateTime DataInsercao 
-    {
-        get { return this.dataInsercao; }
-     
-    }
+
 }
