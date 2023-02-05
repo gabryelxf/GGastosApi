@@ -16,7 +16,7 @@ Api desenvolvida como protótipo de um aplicativo de controle de gastos financei
     .NET 6
   
 
-#Repositório com o css do Swagger com DarkTheme
+#Repositório utilizado para deixar o Swagger com DarkTheme
       
       https://github.com/Amoenus/SwaggerDark  
 
