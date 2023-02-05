@@ -1,6 +1,6 @@
 # GGastosApi
 
-Api para controle de gastos
+Api desenvolvida como protótipo de um aplicativo de controle de gastos financeiros para uso pessoal.
 
 
 #Mapa mental para a construção desta API
@@ -10,7 +10,7 @@ Api para controle de gastos
 
 
 
-#Feita em
+#Desenvolvida Utilizando:
       
     MySQL
     .NET 6
