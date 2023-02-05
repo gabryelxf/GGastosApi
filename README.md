@@ -1,6 +1,6 @@
 # GGastosApi
 
-Api desenvolvida como protótipo de um aplicativo de controle de gastos financeiros para uso pessoal.
+Api desenvolvida como protótipo de um aplicativo de controle de gastos financeiros.
 
 
 #Mapa mental para a construção desta API
