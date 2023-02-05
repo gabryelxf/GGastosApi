@@ -6,6 +6,7 @@ using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -29,6 +30,13 @@ builder.Services.AddControllers().AddNewtonsoftJson();
 var app = builder.Build();
 
 
+//Swagger DarkTheme
+app.UseStaticFiles();
+
+app.UseSwaggerUI(c => {
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyAPI");
+    c.InjectStylesheet("/swagger-ui/SwaggerDark.css");
+});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

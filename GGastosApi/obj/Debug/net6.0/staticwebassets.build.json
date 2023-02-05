@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "app86xs4+7Phsd2P53kpC402G56rLf0iDY+UsJx7Rwc=",
+  "Hash": "4GMcar0LBMEkWZU5WvthA2lBMViYEbaBTkoecb3TWmE=",
   "Source": "GGastosApi",
   "BasePath": "_content/GGastosApi",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\b\\Documents\\GitHub\\GGastosApi\\GGastosApi\\wwwroot\\swagger-ui\\SwaggerDark.css",
+      "SourceId": "GGastosApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\b\\Documents\\GitHub\\GGastosApi\\GGastosApi\\wwwroot\\",
+      "BasePath": "_content/GGastosApi",
+      "RelativePath": "swagger-ui/SwaggerDark.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\swagger-ui\\SwaggerDark.css"
     }
   ]
 }

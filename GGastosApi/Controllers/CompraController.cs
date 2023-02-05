@@ -39,7 +39,17 @@ public class CompraController : ControllerBase
         return CreatedAtAction(nameof(RecuperarCompraPorId), new { id = compra.IdCompra }, compra);
     }
 
+
+
+    /// <summary>
+    /// Recupera compras do banco de dados
+    /// </summary>
+    /// <param name="skip">Quantidade de linhas que deverão ser ignoradas</param>
+    /// <param name="take">Quantidade de linhas que deverão ser recuperadas</param>
+    /// <returns>IEnumerable</returns>
+    /// <response code="200">Caso a recuperação dos dados seja feita com sucesso</response>
     [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public IEnumerable<ReadCompraDto> RecuperarCompras([FromQuery] int skip, [FromQuery] int take)
     {
 
@@ -47,7 +57,14 @@ public class CompraController : ControllerBase
 
     }
 
+    /// <summary>
+    /// Recupera uma compra do banco de dados por Id
+    /// </summary>
+    /// <param name="id">Id da compra a ser recuperada</param>
+    /// <returns>IActionResult</returns>
+    /// <response code="200">Caso a recuperação dos dados seja feita com sucesso</response>
     [HttpGet("{id}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult RecuperarCompraPorId(int id)
     {
 
@@ -60,7 +77,14 @@ public class CompraController : ControllerBase
 
     }
 
+    /// <summary>
+    ///  Recupera compras do banco de dados por Local
+    /// </summary>
+    /// <param name="local">Local da compra a ser recuperada</param>
+    /// <returns>IActionResult</returns>
+    /// <response code="200">Caso a recuperação dos dados seja feita com sucesso</response>
     [HttpGet, Route("api/RecuperarCompraPorLocal")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult RecuperarCompraPorLocal(string local )
     {
 
@@ -72,7 +96,16 @@ public class CompraController : ControllerBase
 
     }
 
+
+    /// <summary>
+    /// Recupera compras do banco de dados pela dataInsercao (Ano/Mês)
+    /// </summary>
+    /// <param name="mes">Mês da dataInsercao da compra a ser recuperada</param>
+    /// /// <param name="ano">Ano da dataInsercao da compra a ser recuperada</param>
+    /// <returns>IEnumerable</returns>
+    /// <response code="200">Caso a recuperação dos dados seja feita com sucesso</response>
     [HttpGet, Route("api/RecuperarCompraPorAnoMes")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public IEnumerable<ReadCompraDto> RecuperarCompraPorAnoMes(int mes, int ano)
     {
 
@@ -87,8 +120,14 @@ public class CompraController : ControllerBase
     }
 
 
-
+    /// <summary>
+    /// Edita uma Compra do banco de dados pelo Id
+    /// </summary>
+    /// <param name="id">Id da compra a ser editada</param>
+    /// <returns>IActionResult</returns>
+    /// <response code="204">Caso a edição dos dados seja feita com sucesso</response>
     [HttpPut("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
     public IActionResult AtualizaCompra(int id, [FromBody] UpdateCompraDto compraDto)
     {
 
@@ -102,7 +141,14 @@ public class CompraController : ControllerBase
 
     }
 
+    /// <summary>
+    /// Edita uma Compra do banco de dados pelo Id
+    /// </summary>
+    /// <param name="id">Id da compra a ser editada</param>
+    /// <returns>IActionResult</returns>
+    /// <response code="200">Caso a edição dos dados seja feita com sucesso</response>
     [HttpPatch("{id}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult AtualizaCompraParcial(int id, JsonPatchDocument<UpdateCompraDto> patch)
     {
 
@@ -120,7 +166,16 @@ public class CompraController : ControllerBase
 
     }
 
+
+
+    /// <summary>
+    /// Exclui uma Compra do banco de dados pelo Id
+    /// </summary>
+    /// <param name="id">Id da compra a ser excluída</param>
+    /// <returns>IActionResult</returns>
+    /// <response code="204">Caso a deleção dos dados seja realizada com sucesso</response>
     [HttpDelete("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
     public IActionResult DeletaCompra(int id)
     {
 

@@ -12,6 +12,64 @@
             <returns>IActionResult</returns>
             <response code="201">Caso inserção seja feita com sucesso</response>
         </member>
+        <member name="M:GGastosApi.Controllers.CompraController.RecuperarCompras(System.Int32,System.Int32)">
+            <summary>
+            Recupera compras do banco de dados
+            </summary>
+            <param name="skip">Quantidade de linhas que deverão ser ignoradas</param>
+            <param name="take">Quantidade de linhas que deverão ser recuperadas</param>
+            <returns>IEnumerable</returns>
+            <response code="200">Caso a recuperação dos dados seja feita com sucesso</response>
+        </member>
+        <member name="M:GGastosApi.Controllers.CompraController.RecuperarCompraPorId(System.Int32)">
+            <summary>
+            Recupera uma compra do banco de dados por Id
+            </summary>
+            <param name="id">Id da compra a ser recuperada</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a recuperação dos dados seja feita com sucesso</response>
+        </member>
+        <member name="M:GGastosApi.Controllers.CompraController.RecuperarCompraPorLocal(System.String)">
+            <summary>
+             Recupera compras do banco de dados por Local
+            </summary>
+            <param name="local">Local da compra a ser recuperada</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a recuperação dos dados seja feita com sucesso</response>
+        </member>
+        <member name="M:GGastosApi.Controllers.CompraController.RecuperarCompraPorAnoMes(System.Int32,System.Int32)">
+            <summary>
+            Recupera compras do banco de dados pela dataInsercao (Ano/Mês)
+            </summary>
+            <param name="mes">Mês da dataInsercao da compra a ser recuperada</param>
+            /// <param name="ano">Ano da dataInsercao da compra a ser recuperada</param>
+            <returns>IEnumerable</returns>
+            <response code="200">Caso a recuperação dos dados seja feita com sucesso</response>
+        </member>
+        <member name="M:GGastosApi.Controllers.CompraController.AtualizaCompra(System.Int32,GGastosApi.Data.UpdateCompraDto)">
+            <summary>
+            Edita uma Compra do banco de dados pelo Id
+            </summary>
+            <param name="id">Id da compra a ser editada</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a edição dos dados seja feita com sucesso</response>
+        </member>
+        <member name="M:GGastosApi.Controllers.CompraController.AtualizaCompraParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{GGastosApi.Data.UpdateCompraDto})">
+            <summary>
+            Edita uma Compra do banco de dados pelo Id
+            </summary>
+            <param name="id">Id da compra a ser editada</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a edição dos dados seja feita com sucesso</response>
+        </member>
+        <member name="M:GGastosApi.Controllers.CompraController.DeletaCompra(System.Int32)">
+            <summary>
+            Exclui uma Compra do banco de dados pelo Id
+            </summary>
+            <param name="id">Id da compra a ser excluída</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a deleção dos dados seja realizada com sucesso</response>
+        </member>
         <member name="T:GGastosApi.Migrations.CriandoTabelaDeCompra">
             <inheritdoc />
         </member>
