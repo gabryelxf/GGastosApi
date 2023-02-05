@@ -3,16 +3,18 @@
 Api para controle de gastos
 
 
-#Mapa mental para a construção desta API{
+#Mapa mental para a construção desta API
+      
+   https://mm.tt/map/2570821188?t=QG4hyqVw1O
+  
 
-  -https://mm.tt/map/2570821188?t=QG4hyqVw1O
-
-}
 
 
-Feita em:{
+#Feita em
+      
+    MySQL
+    .NET 6
+  
 
-  *.NET 6
-  *MySQL
 
-}
+
