@@ -4,9 +4,9 @@ using GGastosApi.Models;
 
 namespace GGastosApi.Profiles;
 
-public class FilmeProfile : Profile
+public class CompraProfile : Profile
 {
-    public FilmeProfile()
+    public CompraProfile()
     {
         CreateMap<CreateCompraDto, Compra>();
         CreateMap<UpdateCompraDto, Compra>();

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\b\\Documents\\GitHub\\GGastosApi\\GGastosApi\\GGastosApi.csproj": {}
+    "C:\\Users\\gxavier\\Documents\\GitHub\\GGastosApi\\GGastosApi\\GGastosApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\b\\Documents\\GitHub\\GGastosApi\\GGastosApi\\GGastosApi.csproj": {
+    "C:\\Users\\gxavier\\Documents\\GitHub\\GGastosApi\\GGastosApi\\GGastosApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\b\\Documents\\GitHub\\GGastosApi\\GGastosApi\\GGastosApi.csproj",
+        "projectUniqueName": "C:\\Users\\gxavier\\Documents\\GitHub\\GGastosApi\\GGastosApi\\GGastosApi.csproj",
         "projectName": "GGastosApi",
-        "projectPath": "C:\\Users\\b\\Documents\\GitHub\\GGastosApi\\GGastosApi\\GGastosApi.csproj",
-        "packagesPath": "C:\\Users\\b\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\b\\Documents\\GitHub\\GGastosApi\\GGastosApi\\obj\\",
+        "projectPath": "C:\\Users\\gxavier\\Documents\\GitHub\\GGastosApi\\GGastosApi\\GGastosApi.csproj",
+        "packagesPath": "C:\\Users\\gxavier\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gxavier\\Documents\\GitHub\\GGastosApi\\GGastosApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\b\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gxavier\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
