@@ -15,8 +15,8 @@ public class CreateCompraDto
     [Range(0.01, double.MaxValue, ErrorMessage = "Campo valor precisa ser maior que 0")]
     public double Valor { get; set; }
 
-    [Required]
-    public DateTime DataInsercao { get; } = DateTime.Now;
+    [Required(ErrorMessage = "Campo DataInsercao é obrigatório")]
+    public DateTime DataInsercao { get; set;}
 
    
 
